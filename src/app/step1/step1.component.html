@@ -1,0 +1,61 @@
+<div class="form-container">
+  <h2>FICHA DE SOLICITAÇÃO DE DESCONTO – 2025</h2>
+  <form [formGroup]="discountForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>1. O ESTUDANTE E O RESPONSÁVEL LEGAL PASSARAM POR ENTREVISTA COM A COORDENAÇÃO?</label>
+      <div>
+        <input type="radio" formControlName="interview" value="Sim" id="interviewSim" />
+        <label for="interviewSim">SIM</label>
+        <input type="radio" formControlName="interview" value="Não" id="interviewNao" />
+        <label for="interviewNao">NÃO</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>2. ALUNO NOVO COM IRMÃO(S) NO COLÉGIO?</label>
+      <div>
+        <input type="radio" formControlName="sibling" value="Sim" id="siblingSim" />
+        <label for="siblingSim">SIM</label>
+        <input type="radio" formControlName="sibling" value="Não" id="siblingNao" />
+        <label for="siblingNao">NÃO</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="responsavel">Eu,</label>
+      <input type="text" formControlName="responsavel" id="responsavel" />
+      <label for="cpf">, portador (a) do CPF:</label>
+      <input type="text" formControlName="cpf" id="cpf" />
+    </div>
+
+    <div class="form-group">
+      <label>Nome:</label>
+      <input type="text" formControlName="nome1" />
+      <label>Ano/Série que irá cursar em 2025:</label>
+      <input type="text" formControlName="serie1" />
+      <label for="dn1">DN:</label>
+      <input type="date" formControlName="dn1" id="dn1" />
+    </div>
+
+    <div class="form-group">
+      <label>Colégio em que estuda:</label>
+      <input type="text" formControlName="colegio1" />
+    </div>
+
+    <div class="form-group">
+      <label>Nome:</label>
+      <input type="text" formControlName="nome2" />
+      <label>Ano/Série que irá cursar em 2025:</label>
+      <input type="text" formControlName="serie2" />
+      <label for="dn2">DN:</label>
+      <input type="date" formControlName="dn2" id="dn2" />
+    </div>
+
+    <div class="form-group">
+      <label>Colégio em que estuda:</label>
+      <input type="text" formControlName="colegio2" />
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="form-container">
   <h2>FICHA DE SOLICITAÇÃO DE DESCONTO – 2025</h2>
   <form [formGroup]="discountForm" (ngSubmit)="onSubmit()">
@@ -59,3 +60,16 @@
     <button type="submit">Enviar</button>
   </form>
 </div>
+=======
+<form>
+    <!-- Inputs para os campos da primeira etapa -->
+    <div>
+        <label for="parentName">Parent Name:</label>
+        <input type="text" id="parentName" [(ngModel)]="parentName" /> <!-- Uso correto do ngModel -->
+      </div>
+      
+    <!-- Adicionar os demais campos de acordo com o arquivo PDF -->
+    <button (click)="next()">Próximo</button>
+  </form>
+  
+>>>>>>> 1ff193256465b222410b73878f9af831bfe302a1

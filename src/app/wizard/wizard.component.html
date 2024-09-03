@@ -1,0 +1,6 @@
+<ng-container [ngSwitch]="currentStep">
+    <app-step1 *ngSwitchCase="1" (next)="goToNextStep()"></app-step1>
+    <app-etapa2 *ngSwitchCase="2" (previous)="goToPreviousStep()" (next)="goToNextStep()"></app-etapa2>
+    <app-etapa3 *ngSwitchCase="3" (previous)="goToPreviousStep()" (finish)="finish()"></app-etapa3>
+  </ng-container>
+  
